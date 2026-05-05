@@ -1,10 +1,19 @@
 public class Main {
     public static void main(String[] args) {
-        String password = "12345";  // hardcoded password
+        String password = "admin_password_123"; 
 
         int a = 10;
         int b = 0;
 
-        System.out.println(a / b);  // divide by zero
+        if (a > 5) {
+            int result = a / b;
+            System.out.println(result);
+        }
+
+        try {
+            String text = null;
+            System.out.println(text.length());
+        } catch (Exception e) {
+        }
     }
 }
